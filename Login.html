@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'><title>Login da Feira</title>
+<style>
+  .main-content{
+	width: 50%;
+	border-radius: 20px;
+	box-shadow: 0 5px 5px rgba(0,0,0,.4);
+	margin: 5em auto;
+	display: flex;
+}
+.company__info{
+	background-color: #456ca8;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+}
+
+@media screen and (max-width: 640px) {
+	.main-content{width: 90%;}
+	.company__info{
+		display: none;
+	}
+	.login_form{
+		border-top-left-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+}
+@media screen and (min-width: 642px) and (max-width:800px){
+	.main-content{width: 70%;}
+}
+.row > h2{
+	color:#456ca8;
+}
+.login_form{
+	background-color: #fff;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+form{
+	padding: 0 2em;
+}
+.form__input{
+	width: 100%;
+	border:0px solid transparent;
+	border-radius: 0;
+	border-bottom: 1px solid #aaa;
+	padding: 1em .5em .5em;
+	padding-left: 2em;
+	outline:none;
+	margin:1.5em auto;
+	transition: all .5s ease;
+}
+.form__input:focus{
+	border-bottom-color: #456ca8;
+	box-shadow: 0 0 5px rgba(0,80,80,.4); 
+	border-radius: 4px;
+}
+.btn{
+	transition: all .5s ease;
+	width: 70%;
+	border-radius: 30px;
+	color:#456ca8;
+	font-weight: 600;
+	background-color: #fff;
+	border: 1px solid #456ca8;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+.btn:hover, .btn:focus{
+	background-color: #456ca8;
+	color:#fff;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Yinka Enoch Adedokun">
+<title>Login Page</title>
+</head>
+<body>
+
+<div class="container-fluid">
+<div class="row main-content bg-success text-center">
+<div class="col-md-4 text-center company__info">
+<span class="company__logo"><h2><img src="logo.png" width="150px" height="100px"/></span></span>
+<h4 class="company_title">EEEP de PACATUBA</h4>
+</div>
+<div class="col-md-8 col-xs-12 col-sm-12 login_form ">
+<div class="container-fluid">
+<div class="row">
+<h2>Log In</h2>
+</div>
+<div class="row">
+<form method="POST" action="Validar.php" control="" class="form-group">
+<div class="row">
+<input type="text" name="username" id="username" class="form__input" placeholder="Usuario">
+</div>
+<div class="row">
+
+<input type="password" name="password" id="password" class="form__input" placeholder="Senha">
+</div>
+<div class="row">
+<input type="submit" value="Entrar" class="btn">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid text-center footer">
+Coded with &hearts; pelo 2º Informática - 2019</a></p>
+</div>
+</body>
+</body>
+</html>

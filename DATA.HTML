@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<link rel='stylesheet' type="text/css" href="TrabsonJS.css">
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <script src="jquery-3.4.1.js"></script>
+  <script src="jquery-ui.min.js"></script>
+</HEAD>
+<BODY>
+<script>
+    $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+<div id='cssmenu'>  
+   <ul>
+      <li><a href='TrabsonJS.HTML'>☰ Home</a></li>
+      <li><a href='#'>👥 Aluno</a>
+         <ul>
+            <li><a href='data.HTML'>📆 Data</a>
+               
+            </li>
+            <li><a href='busca.html'>🔍 Busca</a>
+            </li>
+         </ul>
+      </li>
+      <li><a href='#'> ✐ Professor</a></li>
+      <li><a href='#'>☞ Sair</a></li>
+   </ul>
+   
+</div>
+<p id="data">Data: <input type="text" id="datepicker"></p>
+   
+</body>
+</HTML>
